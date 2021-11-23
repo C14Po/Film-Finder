@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin: 20px auto 40px;
+  font-size: 1.5rem;
+}
+
+nav {
+  text-align: center;
+  margin: 20px;
+  font-size: 1.1rem;
+}
+
+nav label {
+  margin-right: 90px;
+}
+
+nav input {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+main {
+  margin: 75px 100px 60px;
+}
+
+main li {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  row-gap: 20px;
+}
+
+main li img {
+  width: 250px;
+  height: 350px;
+  border: solid 3px #fff;
+}
+/*# sourceMappingURL=style.css.map */

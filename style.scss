@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+@mixin alignText {
+	text-align: center;
+}
+
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+header {
+	@include alignText();
+	margin: 20px auto 40px;
+	font-size: 1.5rem;
+}
+
+nav {
+	@include alignText();
+	margin: 20px;
+	font-size: 1.1rem;
+
+	label {
+		margin-right: 90px;
+	}
+
+	input {
+		margin-right: 15px;
+		cursor: pointer;
+	}
+}
+
+main {
+	margin: 75px 100px 60px;
+
+	li {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		row-gap: 20px;
+
+		img {
+			width: 250px;
+			height: 350px;
+			border: solid 3px #fff;
+		}
+	}
+}

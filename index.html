@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="database.js"></script>
+		<script defer src="script.js"></script>
+		<title>Filmzoeker</title>
+	</head>
+	<body>
+		<header>
+			<h2>Filmzoeker</h2>
+		</header>
+		<nav>
+			<label for="new_films"
+				><input
+					type="radio"
+					id="newFilms"
+					name="search_films"
+					value="new_films"
+				/>Films uit 2014 of nieuwer</label
+			>
+
+			<label for="avenger_films">
+				<input
+					type="radio"
+					id="avengerFilms"
+					name="search_films"
+					value="avenger_films"
+				/>Avenger Films</label
+			>
+
+			<label for="xmen_films">
+				<input
+					type="radio"
+					id="xMenFilms"
+					name="search_films"
+					value="xmen_films"
+				/>
+				X-Men Films</label
+			>
+
+			<label for="batman_films">
+				<input
+					type="radio"
+					id="batmanFilms"
+					name="search_films"
+					value="batman_films"
+				/>
+				Batman Films</label
+			>
+
+			<label for="princess_films">
+				<input
+					type="radio"
+					id="princessFilms"
+					name="search_films"
+					value="princess_films"
+				/>
+				Prinsessen Films</label
+			>
+		</nav>
+		<main>
+			<ul id="filmList"></ul>
+		</main>
+	</body>
+</html>
